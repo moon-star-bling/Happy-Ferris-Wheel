@@ -1,0 +1,77 @@
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>幸福摩天轮——you and me</title>
+        <style>
+                body{
+                    margin:0;
+                }
+                .ferriswheel{
+                    position:relative;
+                    width:768px;
+                    height:768px;
+                    background:url("images/fsw.png");
+                    margin:33px auto 0 auto;
+                    transform:rotate(30deg);
+                    animation:changeRotate 5s infinite linear;
+                }
+                @keyframes changeRotate{
+                    from{
+                        transform:rotate(0deg);
+                    }
+                    to{
+                        transform:rotate(360deg);
+                    }
+                }
+                @keyframes changeRotate1{
+                    from{
+                        transform:rotate(0deg);
+                    }
+                    to{
+                        transform:rotate(-360deg);
+                    }
+                }
+
+                
+                .boy{
+                    position:absolute;
+                    top:300;
+                    width:130px;
+                    height:170;
+                    background:url("images/boy.png");
+                    animation:changeRotate1 5s infinite linear;
+                }
+                .girl{
+                    position:absolute;
+                    left:350px;
+                    top:600px;
+                    width:130px;
+                    height:170;
+                    background:url("images/girl.png");
+                    animation:changeRotate1 5s infinite linear;
+                }
+                .shamegirl{
+                    position:absolute;
+                    left:670px;
+                    top:300px;
+                    width:130px;
+                    height:170;
+                    background:url("images/shamegirl.png");
+                    animation:changeRotate1 5s infinite linear;
+                }
+                
+        
+        
+                
+                </style>
+            </head>
+            <body>
+                <div class="ferriswheel">
+                        <div class="boy"></div>
+                        <div class="girl"></div>
+                        <div class="shamegirl"></div>
+                </div>
+                
+            </body>
+        </html>
